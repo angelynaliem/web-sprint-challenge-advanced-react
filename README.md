@@ -30,13 +30,23 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain how to build stateful class components.
 
+To build stateful class components we call class instead of function then extends the component with React.Component to bind its base parent component, then we call constructor and super to access its parent props and methods, and then we call this.state and put in the initial value there can be an array of strings/objects with boolean values for example. This state can be updated through the component’s life cycle that includes mounting, updating, and unmounting the component. 
+
 2. Describe the different phases of the component lifecycle.
+
+Phases of component lifecycle starts with Birth when the component is constructed, rendered and mounted. After that, it enters the Growth phase where it can be updated and re-rendered as many times needed, then finally it enters the Death phase where the component is unmounted and removed.
 
 3. Demonstrate an understanding of class component lifecycle methods.
 
+Class component lifecycle methods start with Constructor and Super where it extends from the base parent component so that it can access the parent’s props and methods, then the state is set initially. Render function is called which returns what we usually see on the screen (the JSX in our code), and then we can mount the component with ComponentDidMount and this is where we can fetch data from an API and set the state with the data received from the API. If we need to update the state, we call ComponentDidUpdate and it will cause a re-render, and finally we call ComponentWillUnmount to remove the component.
+
 4. Define stateful logic.
 
+Stateful logic is basically the part of our code that sets our code’s non visual functionality. If in a coffee shop, it is what happens behind the scenes in the kitchen, for instance, not what customers see. It’s the business logic of the application.
+
 5. Describe how to test a React component with React Testing Library.
+
+ Use Arrange, Act, Assert. First, we render the component that we want to test to find all the queries that we can access. Next, we pick a query to find the element we are looking for (this is Act). And finally, we make sure that the element is rendered correctly on the DOM (this is Assert). 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
